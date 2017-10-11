@@ -1,0 +1,48 @@
+#Next steps:
+
+- taxize NACHO (and then Joe)
+- traits missing (Joe)
+- Exotic NACHO (and maybe selfing)
+- Emy rural/urban?
+- Results NACHO
+- make a draft (Amy)
+
+Joe:
+
+1) In linne data check why those entries have no species:     
+    Herbatio            Micro.habitat Genus species notes gen_sp
+295   Ultuna      8 Colles Ultunensis                  NA       
+368     Haga          8 Tumulus Regis                  NA       
+475  Vaksala      6 Lucus Tórnbyensis                  NA       
+496    Husby 6 Populetum Hasselbyense                  NA  
+
+2) Group those factors in categories like: Pratum (icluding Praedium?), Palus, Rupes, Silva /Pascua, Agri, Ripa /fluvius, ... create a csv of factor, category.
+ [1] 1 Rupes Lassbyenses             2 Pascua Sylvatica             
+ [3] 3 Palus Norrbyensis             4 Pratum Norrbyense            
+ [5] 5 Uliginosa Amni                6 Lucus Norrbyensis            
+ [7] 7 Pratum Gottsundense           8 Bovilia Pastoris             
+ [9] 9 Praecipitia Gottsundensia     10 Rupes Gottsundenses         
+[11] 11 Praedium Wardsattra          12 Silva Regia                 
+[13] 1 Tegelhagen                    2 Piscina                      
+[15] 3 Lupuleta                      4 Campus Polonicus             
+[17] 5 Silva Regia                   6 Fons Sandwiksensis           
+[19] 7 Ultuna                        8 Colles Ultunensis            
+[21] 9 Liljeholmen                   1Tecta Upsaliensia             
+[23] 2 Agri Upsalieness              3 Versurae Agrorum             
+[25] 4 Saltus Rickombergensis        5 Prataflogstadensia & Hagensia
+[27] 6 Rivulus                       7 Haga                         
+[29] 8 Tumulus Regis                 1 Pratum Regium                
+[31] 2 Ripae                         3 Fluvius                      
+[33] 4 Templo Danemarkensi           5 Lucus Nantunensis            
+[35] 1 SEPTA                         2 Pratumbarbyense              
+[37] 3 Rupes                         4 Tumuli Upsaliensis           
+[39] 5 Wittulsbergensis              1 Via Upsaliensis              
+[41] 2 Agri Waxalenses               3 Prata Ekensia & Fallensia    
+[43] 4 Falla                         5 Tórnby                       
+[45] 6 Lucus Tórnbyensis             1 Luthagen                     
+[47] 2 Ripa fluvii UPSALIENSIS       3 Pratum Saltpetterángen       
+[49] 4 Prata                         5 Nemus Regium                 
+[51] 6 Populetum Hasselbyense        7 Templi Borfensis             
+[53] 8 Praedium Kiattinge            9 Pratum Nyflense              
+[55] 10 Praedium Husby               1 Sylva Deserta                
+[57] 2 Palus Jumkilensis             3 Plateae Urbis Upsaliensis 
