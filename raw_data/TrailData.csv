@@ -1,0 +1,334 @@
+,,,,5/19/2017,5/18/2017,5/9/2017,5/10/2017,5/22/2017,5/12/2017,7/15/2017,5/16/2017,2017/06/19,2017/06/22,2017/06/12,2017/06/14,2017/06/16,2017/06/19,2017/06/14,2017/06/26,2017/07/14,2017/07/18,2017/07/06,2017/07/10 and 12,2017/07/13,2017/07/17,2017/07/07,2017/07/17,2017/08/06,2017/08/07,2017/08/01,2017/08/03,2017/08/04,2017/08/08,2017/08/02,2017/08/09,,,,,,,,
+Family,Genus,Species,Code,MayDanmark,MayGamlaUppsala,MayGottsunda,MayHaga,MayHusby,MayJumkil,MayUltuna,MayVaksala,JuneDanmark,JuneGamlaUppsala,JuneGottsunda,JuneHaga,JuneHusby,JuneJumkil,JuneUltuna,JuneVaksala,JulyDanmark,JulyGamlaUppsala,JulyGottsunda,JulyHaga,JulyHusby,JulyJumkil,JulyUltuna,JulyVaksala,AugustDanmark,AugustGamlaUppsala,AugustGottsunda,AugustHaga,AugustHusby,AugustJumkil,AugustUltuna,AugustVaksala,Danmark,GamlaUppsala,Gottsunda,Haga,Husby,Jumkil,Ultuna,Vaksala
+Adoxaceae,Viburnum,opulus L.,Vibuopul,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0
+Alismataceae,Alisma ,plantago-aquatica,Alisplan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Alsinoideae,Cerastium,fontanum Baumg. ,Cerafont,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,1,1,1,0,0
+Amaryllidaceae,Allium,oleraceum,Allioler,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Amaryllidaceae,Narcissus,asturiensis,Narcastu,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Amaryllidaceae,Narcissus,pseudonarcissus,Narcpseu,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1
+Amaryllidaceae,Narcissus,tazetta,Narctaze,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0
+Apiaceae,Aegopodium,podagraria L.,Aegopoda,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,0,1,0,0,0,1,1,1,1,1,1,1,1
+Apiaceae,Angelica ,sylvestris L. ,Angesylv,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0
+Apiaceae,Anthriscus,sylvestris L.,Anthsylv,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1
+Apiaceae,Carum,carvi L.,Carucarv,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0
+Apiaceae,Daucus ,carota sativus,Dauccaro,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1
+Apiaceae,Heracleum,sphondylium L.,Heraspho,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Apiaceae,Myrrhis,odorata,Myrrodor,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Apiaceae,Pastinaca,sativa L.,Pastsati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1
+Apiaceae,Peucedanum ,palustre,Peucpalu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Apiaceae,Pimpinella,saxifraga L.,Pimpsaxi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Apiaceae,Sium,latifolium,Siumlati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Apocynaceae,Vinca,minor,Vincmino,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0
+Asparagaceae,Convallaria,majalis L.,Convmaja,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Asparagaceae,Maianthemum,bifolium,Maiabifo,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+Asparagaceae,Muscari,neglectum,Muscnegl,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+Asparagaceae,Polygonatum,odoratum ,Polyodor,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Asparagaceae,Puschkinia,scilloides,Puscscill,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+Asparagaceae,Scilla,forbesii,Scillforb,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+Asparagaceae,Scilla,siberica,Scillsibe,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1
+Asteraceae,Achillea,millefolium L.,Achimill,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Achillea,ptarmica,Achiptar,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1
+Asteraceae,Antennaria,dioica ,Antedioi,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Anthemis,tinctoria L. ,Anthtinc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,1,0,0,1
+Asteraceae,Arctium,tomentosum ,Arcttome,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1,1
+Asteraceae,Artemisia,vulgaris L.,Artevulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1
+Asteraceae,Aster,Sibiricus,Astesibr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0
+Asteraceae,Bellis,perennis L.,Bellpere,1,1,0,1,0,0,1,0,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,0
+Asteraceae,Carduus,acanthoides L.,Cardacan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+Asteraceae,Carlina,vulgaris L. ,Carlvulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Centaurea,cyanus,Centcyan,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+Asteraceae,Centaurea,jacea L.,Centjace,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1
+Asteraceae,Centaurea,scabiosa,Centscab,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Cicerbita,alpina,Cicealpi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Asteraceae,Cichorium,intybus L.,Cichinty,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Asteraceae,Cirsium,arvense ,Cirsarve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Cirsium,vulgare Ten.,Cirsvulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,1,0,1,1,1,0,0,1,1,0,1,1
+Asteraceae,Crepis,praemorsa,Crepprae,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1
+Asteraceae,Crepis,tectorum,Creptect,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+Asteraceae,Cyanus ,segetum ,Cyansege,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+Asteraceae,Erigeron,acer L.,Erigacer,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Eupatorium,cannabinum,Eupacann,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Hieracium,canadense,Hiercana,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Asteraceae,Hieracium,murorum L.,Hiermuro,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Hieracium,pilosella L.,Hierpilo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1
+Asteraceae,Hieracium,tridentata,Hiertrid,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Hieracium,umbellatum L. ,Hierumbe,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Hieracium,vulgata,Hiervulg,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Hypochaeris,maculata ,Hypomacu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Asteraceae,Inula,salicina,Inulsali,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Lactuca,muralis,Lactmura,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,0,0,0,1,1,1,0,1,0,0,1,1,1,1
+Asteraceae,Lactuca,serriola,Lactserr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1
+Asteraceae,Lapsana ,comunnis,Lapscomu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1
+Asteraceae,Leontodon,autumnalis,Leonautu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1
+Asteraceae,Leontodon,hispidus,Leonhisp,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1
+Asteraceae,Leucanthemum,vulgare Lam.,Leucvulg,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Asteraceae,Matricaria,discoides DC.,Matrdisc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Asteraceae,Matricaria,matricarioides,Matrmatr,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1
+Asteraceae,Matricaria,recutita L.,Matrrecu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1
+Asteraceae,Mycelis,muralis,Mycemura,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0
+Asteraceae,Onopordum ,acanthium,Onopacan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Picris,hieracioides,Picrhier,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1
+Asteraceae,Pilosella,officinarum,Pilooffi,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
+Asteraceae,Saussurea,alpina,Sausalpi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+Asteraceae,Scorzoneroides,autumnalis L.,Scorautu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Asteraceae,Senecio ,viscosus,Senevisc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+Asteraceae,Senecio ,vulgaris,Senevulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1
+Asteraceae,Solidago,virgaurea L. ,Solivirg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0
+Asteraceae,Sonchus,arvensis,Soncarve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1
+Asteraceae,Sonchus,oleraceus,Soncoler,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Asteraceae,Tanacetum ,vulgare L. ,Tanavulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1
+Asteraceae,Taraxacum ,officinale ,Taraoffi,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Tragopogon ,pratensis L.,Tragprat,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,1,1,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,1,1,0,1
+Asteraceae,Tripleurospermum,perforatum,Tripperf,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Asteraceae,Tussilago,farfara,Tussfarf,1,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1
+Balsaminaceae,Impatiens,glandulifera Royle,Impaglan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Balsaminaceae,Impatiens,parviflora,Impaparv,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Betulaceae,Betula,avellana L.,Betuavel,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+Betulaceae,Betula,pendula Roth,Betupend,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+Betulaceae,Betula,pubescens Ehrh.,Betupube,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Boraginaceae,Echium ,vulgare L.,Echivulg,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,1
+Boraginaceae,Myosotis,arvensis,Myosarve,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Boraginaceae,Myosotis,laxa,Myoslaxa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+Boraginaceae,Myosotis,ramosissima,Myosramo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Boraginaceae,Myosotis,spp.,Myosspp,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1
+Boraginaceae,Myosotis,scorpoides,Myoslaxa,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,1
+Boraginaceae,Myosotis,sylvatica,Myossylv,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,0,0,1,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1
+Boraginaceae,Pulmonaria,obscura,Pulmobsc,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Boraginaceae,Symphytum, x uplandicum,Sympuplan,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+Brassicaceae,Alliaria,petiolata,Allipeti,1,1,0,0,1,0,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,1,1,1,1,1,0,1,1
+Brassicaceae,Arabidopsis,spp.,Aracspp,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Brassicaceae,Armoracia,rusticana,Armorust,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0
+Brassicaceae,Barbarea,vulgaris,Barbvulg,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1
+Brassicaceae,Bunias,orientalis L.,Buniorie,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+Brassicaceae,Capsella,bursa-pastoris L. ,Capsburs,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,1,1,1,1,1,0,1,1,0,1,0,0,1,0,0,1,1,1,1,1,1,0,1,1
+Brassicaceae,Cardamine,pratensis,Cardprat,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+Brassicaceae,Cardaminopsis,arenosa,Cardaren,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Brassicaceae,Erophila,verna,Eropvern,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1
+Brassicaceae,Sinapis,arvensis,Sinaarve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Brassicaceae,Sisymbrium,altissimum,Sisyalti,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Brassicaceae,Thlaspi,arvense L.,Thlaarve,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1
+Brassicaceae,Thlaspi,caerulescens,Thlacaer,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0
+Butomaceae,Butomus,umbellatus,Butoumbe,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Campanulaceae,Campanula,glomerata,Campglom,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1
+Campanulaceae,Campanula,latifolia,Camplati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Campanulaceae,Campanula,persicifolia L.,Camppers,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,1,1,0,1,0,1,0,1
+Campanulaceae,Campanula,rapunculoides L. ,Camprapu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1
+Campanulaceae,Campanula,rotundifolia L.,Camprotu,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Campanulaceae,Campanula,trachelium L.,Camptrac,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1
+Campanulaceae,Jasione,montana L.,Jasimont,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Caprifoliaceae,Sambucus ,nigra,Sambnigr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Caprifoliaceae,Valeriana,officinalis L.,Valeoffi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Caryophyllaceae,Arenaria,serpyllifolia,Arenserp,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+Caryophyllaceae,Cerastium,fontanum Baumg. ,Cerafont,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,1,0,0,0,1,0,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1,1,1,0
+Caryophyllaceae,Cerastium,tomentosum L.,Ceratome,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Caryophyllaceae,Dianthus ,deltoides L. ,Diandelt,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1
+Caryophyllaceae,Saponaria,officinalis,Sapooffi,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0
+Caryophyllaceae,Scleranthus,annuus,Scleannu,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0
+Caryophyllaceae,Scleranthus,perennis,Sclepere,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Caryophyllaceae,Silene,dioica ,Sileannu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Caryophyllaceae,Silene,flos-cuculi,Sileflos,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Caryophyllaceae,Silene,latifolia Poir.,Silelati,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Caryophyllaceae,Silene,nutans L. ,Silenuta,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0
+Caryophyllaceae,Silene,vulgaris,Silevulg,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0
+Caryophyllaceae,Spergularia,marina,Spermari,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+Caryophyllaceae,Spergularia,salina,Spersali,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Caryophyllaceae,Stellaria,alsine,Stelalsi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Caryophyllaceae,Stellaria,graminea L.,Stelgram,0,0,0,0,0,0,0,0,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+Caryophyllaceae,Stellaria,longifolia ,Stellong,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+Caryophyllaceae,Stellaria,media L.,Stelmedi,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,0
+Caryophyllaceae,Stellaria,nemorum,Stellnemo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Caryophyllaceae,Stellaria,palustris Retz. ,Stelpalu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Caryophyllaceae,Viscaria,vulgaris Roehl.,Viscvulg,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0
+Convallariaceae,Convallaria,majalis L.,Convmaja,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0
+Convolvulaceae,Calystegia,sepium ,Calysepi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,1,0,1,0
+Convolvulaceae,Convolvulus,arvensis L.,Convarve,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1
+Crassulaceae,Hylotelephium,telephium,Hylotele,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+Crassulaceae,Sedum,acre L.,Seduacre,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,1,1,1,1,1,0,1,0
+Crassulaceae,Sedum,album,Sedualbu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+Crassulaceae,Sedum,hybridum,Seduhybr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+Crassulaceae,Sedum,telephium,Hylotele,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0
+Cyperaceae,Eriophorum,angustifolium Honck.,Erioangu,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Dipsacaceae,Succisa,pratensis Moench.,Succprat,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0
+Dipsacaceae,Knautia,arvensis ,Knauarve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1
+Droseraceae,Drosera,rotundifolia L.,Drosrotu,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0
+Ericaceae,Calluna,vulgaris,Callvulg,0,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1
+Ericaceae,Empetrum,nigrum L.,Empenigr,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+Ericaceae,Pyrola,minor L.,Pyromino,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Ericaceae,Pyrola,rotundifolia L.,Pyrorotu,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0
+Ericaceae,Rhododendron,tomentosum,Rhodtome,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Ericaceae,Vaccinium ,myrtillus L.,Vaccimyrt,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1
+Ericaceae,Vaccinium ,vitis-idaea L.,Vaccviti,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,0,0
+Euphorbiaceae,Euphorbia,helioscopia,Auphheli,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0
+Fabaceae,Anthyllis,vulneraria L. ,Anthvuln,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+Fabaceae,Astragalus,glycyhphyllos,Astrglyc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Fabaceae,Laburnum,anagyroides Medik.,Labuanag,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0
+Fabaceae,Lathyrus,latifolius,Lathlati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Fabaceae,Lathyrus,linifolius,Lathlini,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0
+Fabaceae,Lathyrus,montanus,Lathmont,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,1
+Fabaceae,Lathyrus,pratensis L.,Lathprat,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Lathyrus,sylvestris L. ,Lathsylv,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Fabaceae,Lotus,corniculatus L.,Lotucorn,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Lupinus,polyphyllus ,Lupipoly,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1
+Fabaceae,Medicago,falcata L. ,Medifalc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,1,0,1,0,1,1,0,0,1,1,1,1,1,1,0,0,1
+Fabaceae,Medicago,lupulina L.,Medilupu,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Medicago,sativa L.,Medisati,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,1,1,0,0,1,0,1,0,1,1,0,1,1
+Fabaceae,Melilotus,albus ,Melialbu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1
+Fabaceae,Melilotus,officinalis,Melioffi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,0,0,1
+Fabaceae,Trifolium,arvense L.,Trifarve,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0
+Fabaceae,Trifolium,medium ,Trifmedi,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,1,1,0,1,0,0,1,0,1,1,1,1,1,0,1,1,1
+Fabaceae,Trifolium,montanum L. ,Trifmont,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1
+Fabaceae,Trifolium,pratense L.,Trifprat,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Trifolium,repens L.,Trifrepe,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Vicia,cassubica L.,Vicicass,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Fabaceae,Vicia,cracca L.,Vicicrac,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Vicia,pisiformis,Vicipisi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+Fabaceae,Vicia,sepium L.,Vicisepi,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fabaceae,Vicia,sylvatica L.,Vicisylv,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Fagaceae,Quercus,robur L.,Querrobu,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0
+Geraniaceae,Erodium,cicutarium,Erodcicu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Geraniaceae,Geranium,lucidum,Geraluc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+Geraniaceae,Geranium,pratense,Geraprat,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Geraniaceae,Geranium,pusillum,Gerapusi,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0
+Geraniaceae,Geranium,robertianum L.,Gerarobe,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1
+Geraniaceae,Geranium,sanguineum,Gerasang,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1
+Geraniaceae,Geranium,sylvaticum L.,Gerasylv,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,0,0,1,0,0,0,0,0,1,1,1,1,0,1,1,1
+Grossulariaceae,Ribes,uva-crispa L.,Ribeuvac,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+Hypericaceae,Hypericum,maculatum ,Hypemacu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,1,1,0,0,0,0,1,0,1,1,1,0,0,1,1,0,1
+Hypericaceae,Hypericum,montanum,Hypemont,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1
+Hypericaceae,Hypericum,perforatum L.,Hypeperf,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,0,1
+Iridaceae,Iris,pseudacorus L. ,Irispseu,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,1,0,1,0,1,0
+Lamiaceae,Ajuga,reptans,Ajugrept,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0
+Lamiaceae,Galeopsis,ladanum,Galelada,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Lamiaceae,Galeopsis,speciosa,Galespec,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1
+Lamiaceae,Galeopsis,tetrahit L.,Galetetr,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0
+Lamiaceae,Glechoma,hederacea L.,Glechede,1,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0
+Lamiaceae,Lamium,album L. ,Lamialbu,1,1,0,0,1,0,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+Lamiaceae,Lamium,purpureum L. ,Lamipurp,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,1,0,1,1,0,0,0,0,1,0,1,1,0,1,1,0,1,0
+Lamiaceae,Mentha,arvensis L.,Mentarve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0
+Lamiaceae,Prunella,vulgaris L.,Prunvulg,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1
+Lamiaceae,Scutellaria,galericulata L.,Scutgale,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,1,1,0
+Lamiaceae,Stachys,palustris,Stacpalu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0
+Lamiaceae,Thymus,serpyllum,Thymserp,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+Lemnaceae,Lemna ,minor,Lemnmino,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1
+Liliaceae,Fritillaria,meleagris,Fritmele,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Liliaceae,Gagea,lutea,Gagelute,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+Liliaceae,Gagea,minima,Gagemini,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0
+Liliaceae,Lilium,martagon L. ,Lilimart,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Liliaceae,Ornithogalum,angustifolium,Orniangu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Liliaceae,Tulipa,gesneriana,Tuligesn,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0
+Linaceae,Linum,catharticum,Linucath,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Linnaeaceae,Linnaea,borealis L.,Linnbore,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Lycopodiaceae,Lycopodium,clavatum,Lycoclav,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Lythraceae,Lythrum,salicaria,Lythsali,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,1
+Malvaceae,Malva,alcea,Malva,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+Menyanthaceae,Menyanthes,trifoliata L.,Menytrif,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Myrsinaceae,Lysimachia ,nummularia L. ,Lysinumm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+Myrsinaceae,Lysimachia ,punctata L. ,Lysipunc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0
+Myrsinaceae,Lysimachia ,vulgaris,Lysivulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,1,0,1,0,0,0,1,1,1,0,1,1,0
+Nymphaeaceae,Nymphaea,alba L.,Nympalba,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+Nymphaeaceae,Nuphar,lutea,Nuphluta,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0
+Oleaceae,Syringa,vulgaris L.,Syrivulg,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0
+Onagraceae,Epilobium,angustifolium,Epilangu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Onagraceae,Epilobium,hirsutum,Epilhirs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1
+Onagraceae,Epilobium,montanum L. ,Epilmont,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0
+Onagraceae,Epilobium,palustre L. ,Epilpalu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Orchidaceae,Platanthera,chlorantha,Planchlo,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+Orobanchaceae,Euphrasia ,officinalis ,Euphoffi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Orobanchaceae,Melampyrum,cristatum L.,Melacris,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+Orobanchaceae,Melampyrum,nemorosum L.,Melanemo,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,1
+Orobanchaceae,Melampyrum,pratense L.,Melaprat,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,1,0,0,1,0,1,0,0,1,1,1,1,0,1,0,1,1,1,1
+Orobanchaceae,Melampyrum,sylvaticum L.,Melasylv,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,1,0,0
+Orobanchaceae,Rhinanthus,angustifolius,Rhinangu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0
+Orobanchaceae,Rhinanthus,minor L.,Rhinmino,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,0,1,1,1,1,1,0,1
+Papaveraceae,Chelidonium,majus L.,Chelmaju,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1
+Papaveraceae,Corydalis,nobilis,Corynobi,0,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1
+Papaveraceae,Fumaria,officinalis L. ,Fumaoffi,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1
+Papaveraceae,Fumaria,vaillantii Loisel.,Fumavail,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Papaveraceae,Papaver,dubium,Papadub,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1
+Plantaginaceae,Chaenorhinum,minus,Chaeminu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0
+Plantaginaceae,Linaria,repens ,Linarepe,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0
+Plantaginaceae,Linaria,vulgaris Mill. ,Linavulg,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,1
+Plantaginaceae,Plantago,lanceolata L. ,Planlanc,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,1,0,1,1,0,1,1,1,1,0
+Plantaginaceae,Plantago,major L.,Planmajo,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Plantaginaceae,Plantago,media ,Planmedi,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,1,1,0,1,0,1,1,0
+Plantaginaceae,Veronica,agrestis,Veroagre,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Plantaginaceae,Veronica,arvensis,Veroarve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Plantaginaceae,Veronica,beccabunga,Verobecc,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Plantaginaceae,Veronica,chamaedrys L.,Verocham,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1
+Plantaginaceae,Veronica,officinalis,Verooffi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Plantaginaceae,Veronica,serpylifolia,Veroserp,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0
+Plantaginaceae,Veronica,spicata L. ,Verospic,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+Plantaginaceae,Veronica,verna,Verovern,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Polygonaceae,Bistorta,vivipara,Bistvivi,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Polygonaceae,Persicaria,lapathifolia,Perslapa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Polygonaceae,Persicaria,maculosa ,Persmacu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+Polygonaceae,Persicaria,vivipara,Persvivi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Polygonaceae,Polygala,vulgaris,Polyvulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Polygonaceae,Polygonum,aviculare,Polyavic,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0
+Polygonaceae,Rumex,acetosa L.,Rumeacet,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
+Polygonaceae,Rumex,acetosella L.,Rumeacet,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0
+Polygonaceae,Rumex,crispus L.,Rumecris,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Polygonaceae,Rumex,longifolius L.,Rumelong,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Polygonaceae,Rumexmeno,acetosa L.,Rumeacet,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Primulaceae,Lysimachia,nummularia L. ,Lysinumm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+Primulaceae,Lysimachia,vulgaris L. ,Lysivulg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1
+Primulaceae,Primula,farinosa,Primfari,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Primulaceae,Primula,veris,Primveri,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
+Primulaceae,Trientalis,europaea,Triteuro,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0
+Ranunculaceae,Anemone,nemorosa L.,Anemnemo,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
+Ranunculaceae,Anemone,ranunculiodes,Anemranu,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Ranunculaceae,Aquilegia,vulgaris L.,Aquivulg,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1
+Ranunculaceae,Caltha,palustris L. ,Caltpalu,1,1,1,1,1,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1
+Ranunculaceae,Consolida,regalis ,Consrega,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+Ranunculaceae,Ficaria,verna,Ficavern,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1
+Ranunculaceae,Hepatica,nobilis,Hepanobil,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,1
+Ranunculaceae,Pulsatilla,vulgaris,Pulsvulg,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Ranunculaceae,Ranunculus,acris L.,Ranuacri,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Ranunculaceae,Ranunculus,flammula,Ranuflamm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0
+Ranunculaceae,Ranunculus,lingua,Ranuling,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Ranunculaceae,Ranunculus,repens L.,Ranurepe,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,1,0,0
+Rosaceae,Agrimonia,eupatoria L.,Agrieupa,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1
+Rosaceae,Alchemilla,vulgaris L.,Alchvulg,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1
+Rosaceae,Argentina,anserina L.,Argeanse,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0
+Rosaceae,Filipendula,ulmaria L.,Filiulma,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Rosaceae,Filipendula,vulgaris Moench.,Filivulg,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,1,1,0,1,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+Rosaceae,Fragaria ,vesca L. ,Fragvesc,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,0,1,0,0,1,0,1,1,0,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1
+Rosaceae,Geum,rivale L.,Geumriva,0,0,0,0,1,0,0,0,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1
+Rosaceae,Geum,urbanum L.,Geumurba,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1
+Rosaceae,Malus,sylvestris ,Malusylv,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Rosaceae,Potentilla,anserina,Poteanse,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0
+Rosaceae,Potentilla,argentea L.,Potearge,1,0,0,0,0,0,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Rosaceae,Potentilla,erecta,Poteerec,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1
+Rosaceae,Potentilla,fruticosa,Potefruc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Rosaceae,Potentilla,palustre L.,Potepalu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Rosaceae,Potentilla,palustris L. ,Potepalu,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+Rosaceae,Potentilla,reptans L.,Poterept,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Rosaceae,Prunus,padus L.,Pranpadu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Rosaceae,Rosa,canina L.,Rosacani,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,1,0,0,1,1,0,1,1
+Rosaceae,Rosa,dumalis Bechst.,Rosaduma,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1
+Rosaceae,Rosa,mollis Sm. ,Rosamoll,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+Rosaceae,Rosa,rugosa Thunberg.,Rosarugo,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1
+Rosaceae,Rosa,villosa,Rosavill,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0
+Rosaceae,Sorbus ,aucuparia L.,Sorbaucu,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0
+Rubiaceae,Galium,album Mill.,Galialbu,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Rubiaceae,Galium,boreale L.,Galibore,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Rubiaceae,Galium,palustre,Galipalu,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0,1,0,0,0,1,1,0,1,1,1,1,0
+Rubiaceae,Galium,uliginosum L. ,Galiulig,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+Rubiaceae,Galium,verum L.,Galiveru,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+Salicaceae,Populus,tremula L.,Poputrem,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Sapindaceae,Acer,platanoides L.,Acerplat,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0
+Saxifragaceae,Saxifraga,cespitosa,Saxicesp,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Saxifragaceae,Saxifraga,granulata L.,Saxigran,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+Scrophulariaceae,Lathraea,squamaria,Lathsqua,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+Scrophulariaceae,Odontites,vulgaris Moench,Odonsqua,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+Scrophulariaceae,Verbascum ,lychnitis L. ,Verbalych,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Scrophulariaceae,Verbascum ,thapsus L.,Verbthap,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1
+Scrophulariaceae,Veronica,officinalis L.,Verooffi,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Solanaceae,Solanum,dulcamara,Soladulc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Trilliaceae,Paris,quadrifolia L.,Pariquad,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+Urticaceae,Urtica,dioica L.,Urtidioi,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Violaceae,Viola,arvensis Murray.,Violarve,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,1,1,0,1,0,0,0,0,1,1,0,1,1,0,1,0
+Violaceae,Viola,hirta,Violhirt,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1
+Violaceae,Viola,odorata,Violodor,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1
+Violaceae,Viola,riviniana,Violrivi,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1
+Violaceae,Viola,tricolor L.,Violtric,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,1
