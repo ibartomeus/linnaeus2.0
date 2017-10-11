@@ -1,0 +1,250 @@
+---
+title: "Linnaeus 2.0"
+author: "I. Bartomeus"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load libraries, message=FALSE, warning=FALSE}
+library(reshape2)
+library(taxize)
+library(traitbaser)
+library(originr)
+```
+
+This script cleans raw data to explore several questions comparing historical and modern plant surveys.
+
+First we load the data:
+
+Historical data:
+```{r load data, message=FALSE, warning=FALSE}
+#historical 
+lin <- read.csv("raw_data/linneaus.csv", h = T)
+head(lin)
+
+#todo: 
+#uncap transects
+unique(lin$Herbatio)
+levels(lin$Herbatio) <- c("GamlaUppsala", "Danmark", "Gottsunda", "Haga",       
+                          "Husby", "Jumkil", "Ultuna", "Vaksala")
+#check genus and species with taxize...
+lin$gen_sp <- paste(lin$Genus, lin$species)
+#I put it in a for loop to avoid time-outs 537
+clean_sp <- data.frame(species = NA, matched_name2 = NA, synonym_names = NA, final_name = NA)
+for(i in c(100,200,300,400,500,600)){
+  temp <- cleanSpecies(lin$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+  clean_sp <- rbind(clean_sp, temp)
+}
+clean_sp <- clean_sp[-1,]
+
+#to fix:
+#Arbutus Uva urfi
+#Cerefus Padus
+#Ophrys Nidus
+#Ranuculus Ficaria:
+# check also blanks!  
+  
+#save output as is looong to test.
+write.csv(clean_sp, "data/clean_linne_sp.csv", row.names = F)
+#load it when needed
+clean_sp <- read.csv("data/clean_linne_sp.csv", h = T)
+
+colnames(clean_sp) <- c("gen_sp", "lin_matched_name", "lin_synonym", "lin_final")
+lin2 <- merge(lin, clean_sp, all.x = TRUE)
+dim(lin)
+dim(lin2) #check!
+lin <- lin2
+
+#check other stuff
+unique(lin$notes) #great, no notes, no worries
+sort(table(lin$gen_sp)) #unique species per transect. Discuss why.
+#two repeated:
+lin[which(lin$gen_sp == "Lycopodium annotinum"),] #curious
+lin[which(lin$gen_sp == " "),] #check why!
+#check also with synonims!
+
+#categorize microhabitats
+unique(lin$Micro.habitat) #I think catogeries can be made.
+#Pratum (Praedium?)
+#Palus
+#Rupes
+#Silva /Pascua
+#Agri
+#Ripa /fluvius
+#...
+
+#Add presence
+lin$Presence_lin <- 1
+
+lin <- lin[,-which(colnames(lin) == "notes")]
+```
+
+Traits data
+
+```{r load traits, message=FALSE, warning=FALSE}
+#species data
+traits0 <- read.csv("raw_data/species_level.csv", h = T)
+head(traits0)
+str(traits0)
+#select traits
+colnames(traits0)
+traits <- subset(traits0, select = c("Species",
+                                    "Genus",
+                                    "Family",
+                                    "open..O..vs.tubular..T.",
+                                    "Flower.s.colour",
+                                    "P1", #anual perennial
+                                    #"L", #light: ignore 
+                                    #"F", #moisture: ignore
+                                    #"R", #pH
+                                    "N" #nitrogen
+                                    #, "S" #salt
+                                    ))
+colnames(traits)[4:7] <- c("Flower_morphology", 
+                           "Flower_colour",
+                           "annual_perennial", "Nitrogen_use")
+
+#remove explanations at bottom
+traits <- traits[1:498,]
+
+#create gen_sp
+traits$gen_sp <- paste(traits$Genus, traits$Species)
+#remove double spaces and L. Taxize?
+
+#I put it in a for loop to avoid time-outs ~500
+traits$gen_sp[33] <- "Vincetoxicum hirundinaria" #gives error ¿?
+#FIX!
+cleanSpecies(traits$gen_sp[33]) # ¿?
+
+clean_sp <- data.frame(species = NA, matched_name2 = NA, synonym_names = NA, final_name = NA)
+for(i in c(100,200,300,400,500)){
+  temp <- cleanSpecies(traits$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+  clean_sp <- rbind(clean_sp, temp)
+}
+clean_sp <- clean_sp[-1,]
+
+#to fix:
+
+#save output as is looong to test.
+write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
+#load it when needed
+clean_trait_sp <- read.csv("data/clean_trait_sp.csv", h = T)
+
+colnames(clean_trait_sp) <- c("gen_sp", "trait_matched_name", "trait_synonym", "trait_final")
+lin2 <- merge(traits, clean_trait_sp, all.x = TRUE)
+dim(lin)
+dim(lin2) #check!
+
+
+#We may want to check for mating system in treeofsex database.
+sex <- read.csv(file = "raw_data/tree_of_sex.csv")
+sex$gen_sp <- paste(sex$Genus, sex$species)
+table(sex$Selfing..self.incompatible.self.compatible.) #
+s <- subset(sex, Selfing..self.incompatible.self.compatible. != "")
+s2 <- s[,c("gen_sp", "Selfing..self.incompatible.self.compatible.")]
+#why species repated??
+length(unique(s2$gen_sp)) #406!
+colnames(s2) <- c("gen_sp", "compatibility")
+#merge when names match!
+merge(traits, s2, all.x = TRUE) 
+
+#See for how many Species we are missing traits and add to trait list. (below??)
+
+#Need to add origin for the new ones based in fe(){originr}
+traits$origin <- NA
+for(i in 1:length(traits$gen_sp)){
+    res <- flora_europaea(traits$gen_sp[i])
+    traits$origin[i] <- ifelse("Sweden" %in% res$native, "native",
+                          ifelse("Sweden" %in% res$exotic, "exotic",
+                                 "not_in_fe"))
+  }
+
+```
+Re-surveys
+
+```{r load surveys, message=FALSE, warning=FALSE}
+
+#trails data
+trails <- read.csv("raw_data/TrailData.csv", h = T, skip = 1)
+head(trails)
+
+#some work to clean this up.
+#0) remove totals
+colnames(trails)
+trails <- trails[,1:36]
+
+#1) remove month names
+colnames(trails) <- gsub(pattern = "May", replacement = "", colnames(trails))
+colnames(trails) <- gsub(pattern = "June", replacement = "", colnames(trails))
+colnames(trails) <- gsub(pattern = "July", replacement = "", colnames(trails))
+colnames(trails) <- gsub(pattern = "August", replacement = "", colnames(trails))
+
+#2) reshape it
+head(trails)
+trails_melted <- melt(data = trails,
+                      id.vars = c("Family", "Genus", "Species", "Code"),
+                      variable.name = "Herbatio",
+                      value.name = "Presence")
+trails_melted$Herbatio_us <- gsub(pattern = ".[0-9]",replacement =  "", trails_melted$Herbatio)
+#subset(trails_melted, Species == "millefolium L.")
+trails2 <- dcast(data = trails_melted, 
+                 formula = Genus + Species + Family + Herbatio_us ~ "Presence_us",
+                 fun.aggregate = sum,
+                 value.var = "Presence") 
+head(trails2)
+unique(trails2$Presence_us)
+#presence can be converted to binary
+trails2$gen_sp <- paste(trails2$Genus, trails2$Species)
+unique(trails2$gen_sp)
+
+#clean species with taxize
+clean_us_sp <- cleanSpecies(trails2$gen_sp) #maybe can be repeated with other database. now db == Itis
+#save output as is looong to test.
+write.csv(clean_us_sp, "data/clean_us_sp.csv")
+#load it when needed
+clean_us_sp <- read.csv("data/clean_us_sp.csv", h = T)
+
+
+```
+We can also use the 'urban_rural.csv' comparision, but I am skipiing it for now. This data is agregated to mean, but in notebook there is more resolution.
+
+Now let's combine the three files
+
+```{r}
+# I want a sp, herbatio, habitat, lineus, us, traits spreadsheet.
+head(lin) #merge by gen_sp, 
+head(trails2) 
+trails2$gen_sp <- paste(trails$Genus, trails$Species) 
+#lots of double spaces... 
+#remove L.
+#check names with taxize
+
+# merge by gen_sp
+temp <- merge(lin, trails2, all = TRUE)
+head(temp) #
+temp$Presence_lin[is.na(temp$Presence_lin)] <- 0
+
+head(traits)
+#remove family (bc is redundant)
+#remove L.
+dat <- merge(temp, traits, all = TRUE)
+head(dat)
+
+```
+
+Save data
+
+```{r}
+write.csv(dat, "data/used_data.csv")
+```
+
+
+
+
+
+
+
+
