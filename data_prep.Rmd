@@ -32,6 +32,7 @@ levels(lin$Herbatio) <- c("GamlaUppsala", "Danmark", "Gottsunda", "Haga",
                           "Husby", "Jumkil", "Ultuna", "Vaksala")
 #check genus and species with taxize...
 lin$gen_sp <- paste(lin$Genus, lin$species)
+#SKIP from here-----
 #I put it in a for loop to avoid time-outs 537
 clean_sp <- data.frame(species = NA, matched_name2 = NA, synonym_names = NA, final_name = NA)
 for(i in c(100,200,300,400,500,600)){
@@ -50,6 +51,7 @@ clean_sp <- clean_sp[-1,]
 #save output as is looong to test.
 write.csv(clean_sp, "data/clean_linne_sp.csv", row.names = F)
 #load it when needed
+#To HERE-----
 clean_sp <- read.csv("data/clean_linne_sp.csv", h = T)
 
 colnames(clean_sp) <- c("gen_sp", "lin_matched_name", "lin_synonym", "lin_final")
@@ -117,16 +119,15 @@ traits$gen_sp <- paste(traits$Genus, traits$Species)
 #I put it in a for loop to avoid time-outs ~500
 traits$gen_sp[33] <- "Vincetoxicum hirundinaria" #gives error ¿?
 #FIX!
-cleanSpecies(traits$gen_sp[33]) # ¿?
+cleanSpecies(species = traits$gen_sp[33]) # ¿?
+test <- cleanSpecies(species = traits$gen_sp[1:20]) # ¿?
 
-clean_sp <- data.frame(species = NA, matched_name2 = NA, synonym_names = NA, final_name = NA)
+clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
 for(i in c(100,200,300,400,500)){
-  temp <- cleanSpecies(traits$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+  temp <- cleanSpecies(species = traits$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
   clean_sp <- rbind(clean_sp, temp)
 }
 clean_sp <- clean_sp[-1,]
-
-#to fix:
 
 #save output as is looong to test.
 write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
@@ -134,10 +135,12 @@ write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
 clean_trait_sp <- read.csv("data/clean_trait_sp.csv", h = T)
 
 colnames(clean_trait_sp) <- c("gen_sp", "trait_matched_name", "trait_synonym", "trait_final")
-lin2 <- merge(traits, clean_trait_sp, all.x = TRUE)
-dim(lin)
-dim(lin2) #check!
+traits2 <- merge(traits, clean_trait_sp, all.x = TRUE)
+dim(traits)
+dim(traits2) #check!
 
+#to fix:
+#capsella bursa-pastoris
 
 #We may want to check for mating system in treeofsex database.
 sex <- read.csv(file = "raw_data/tree_of_sex.csv")
@@ -149,19 +152,21 @@ s2 <- s[,c("gen_sp", "Selfing..self.incompatible.self.compatible.")]
 length(unique(s2$gen_sp)) #406!
 colnames(s2) <- c("gen_sp", "compatibility")
 #merge when names match!
-merge(traits, s2, all.x = TRUE) 
-
+traits3 <- merge(traits2, s2, all.x = TRUE) 
+head(traits3)
+traits3$compatibility
 #See for how many Species we are missing traits and add to trait list. (below??)
+#very few... if names match...
 
 #Need to add origin for the new ones based in fe(){originr}
-traits$origin <- NA
-for(i in 1:length(traits$gen_sp)){
-    res <- flora_europaea(traits$gen_sp[i])
-    traits$origin[i] <- ifelse("Sweden" %in% res$native, "native",
-                          ifelse("Sweden" %in% res$exotic, "exotic",
-                                 "not_in_fe"))
-  }
-
+#traits$origin <- NA
+#for(i in 1:length(traits$gen_sp)){
+#    res <- flora_europaea(traits$gen_sp[i])
+#    traits$origin[i] <- ifelse("Sweden" %in% res$native, "native",
+#                          ifelse("Sweden" %in% res$exotic, "exotic",
+#                                 "not_in_fe"))
+#  }
+#Do with final list of plants!
 ```
 Re-surveys
 
