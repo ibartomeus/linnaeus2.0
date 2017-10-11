@@ -1,0 +1,37 @@
+---
+title: "analysis"
+author: "I. Bartomeus"
+date: "10/2/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Analysis:
+
+- Fig 1: Map (with old anc current city extent if posible)
+
+- % of persisting or lost plants per transect. New plants can be exotic, human additions, not recorded by linneaus (CAVEAT). Relate to Vellend et al. richness loss discusion. Fig 2
+
+```{r}
+head(dat)
+
+
+```
+
+
+- Overall persistance in number of species, showing proportion of each group belonging to anual / tubular / color / N (and maybe self-comp) Fig 3 : Chi Sqr?
+
+- Potential Fig 4: Porp of losers per habitat. Are some habitats more affected than others? Maybe CWM plots? Relate to consequences for pollinators.
+
+- Comparision Urban Rural: Ordination , but also % exotic and % of species persisting (comparing with linne) Fig 5.
+
+-extra: phylogenetic loss... is loss random with respect to phylogeny or clustered in some families?
+
+Discusion points:
+
+[ ] Find population change city area change for uppsala, and how it relates to other cities.
+[ ] Maybe test for sampling effort (accumulation curves?). Maybe we can't. Plants detected while in flower. 
+[ ] Biotic homogenization: Are "new" recorded plants, specially exotic, common to the 8 trails?
