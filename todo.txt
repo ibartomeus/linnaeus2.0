@@ -15,6 +15,7 @@ Joe:
 368     Haga          8 Tumulus Regis                  NA       
 475  Vaksala      6 Lucus Tórnbyensis                  NA       
 496    Husby 6 Populetum Hasselbyense                  NA  
+Can be removed??
 
 2) Group those factors in categories like: Pratum (icluding Praedium?), Palus, Rupes, Silva /Pascua, Agri, Ripa /fluvius, ... create a csv of factor, category.
  [1] 1 Rupes Lassbyenses             2 Pascua Sylvatica             
@@ -47,7 +48,7 @@ Joe:
 [55] 10 Praedium Husby               1 Sylva Deserta                
 [57] 2 Palus Jumkilensis             3 Plateae Urbis Upsaliensis 
 
-3) Some species are not recognized and need manual checking:
+3) Some species are not recognized by itis and need manual checking:
                         gen_sp lin_matched_name lin_synonym lin_final
 6             Arbutus Uva urfi          Arbutus     Arbutus      <NA>
 16               Cerefus Padus             <NA>        <NA>      <NA>
@@ -80,5 +81,3 @@ For trails data:
 128 Capsella bursa -pastoris               <NA>          <NA>        <NA>
 160            Myosotis spp.           Myosotis      Myosotis        <NA>
 
-
-4) 
