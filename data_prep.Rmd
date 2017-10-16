@@ -32,7 +32,7 @@ levels(lin$Herbatio) <- c("GamlaUppsala", "Danmark", "Gottsunda", "Haga",
                           "Husby", "Jumkil", "Ultuna", "Vaksala")
 #check genus and species with taxize...
 lin$gen_sp <- paste(lin$Genus, lin$species)
-#SKIP from here-----
+#SKIP from here-----UPDATE FUNC
 #I put it in a for loop to avoid time-outs 537
 clean_sp <- data.frame(species = NA, matched_name2 = NA, synonym_names = NA, final_name = NA)
 for(i in c(100,200,300,400,500,600)){
@@ -116,12 +116,8 @@ traits <- traits[1:498,]
 traits$gen_sp <- paste(traits$Genus, traits$Species)
 #remove double spaces and L. Taxize?
 
+#SKIP from HERE-------
 #I put it in a for loop to avoid time-outs ~500
-traits$gen_sp[33] <- "Vincetoxicum hirundinaria" #gives error ¿?
-#FIX!
-cleanSpecies(species = traits$gen_sp[33]) # ¿?
-test <- cleanSpecies(species = traits$gen_sp[1:20]) # ¿?
-
 clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
 for(i in c(100,200,300,400,500)){
   temp <- cleanSpecies(species = traits$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
@@ -132,6 +128,7 @@ clean_sp <- clean_sp[-1,]
 #save output as is looong to test.
 write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
 #load it when needed
+#to HERE-----
 clean_trait_sp <- read.csv("data/clean_trait_sp.csv", h = T)
 
 colnames(clean_trait_sp) <- c("gen_sp", "trait_matched_name", "trait_synonym", "trait_final")
@@ -152,7 +149,8 @@ s2 <- s[,c("gen_sp", "Selfing..self.incompatible.self.compatible.")]
 length(unique(s2$gen_sp)) #406!
 colnames(s2) <- c("gen_sp", "compatibility")
 #merge when names match!
-traits3 <- merge(traits2, s2, all.x = TRUE) 
+traits3 <- merge(traits2, s2, by.x = "trait_matched_name", 
+                 by.y = "gen_sp", all.x = TRUE) 
 head(traits3)
 traits3$compatibility
 #See for how many Species we are missing traits and add to trait list. (below??)
@@ -204,14 +202,29 @@ unique(trails2$Presence_us)
 #presence can be converted to binary
 trails2$gen_sp <- paste(trails2$Genus, trails2$Species)
 unique(trails2$gen_sp)
+str(trails2)
+spec <- unique(trails2$gen_sp)
+length(spec)
 
-#clean species with taxize
-clean_us_sp <- cleanSpecies(trails2$gen_sp) #maybe can be repeated with other database. now db == Itis
+#SKIP from HERE-------
+#I put it in a for loop to avoid time-outs ~500
+clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
+for(i in c(100,200,300,400)){
+  temp <- cleanSpecies(species = spec[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+  clean_sp <- rbind(clean_sp, temp)
+}
+clean_sp <- clean_sp[-1,]
+
 #save output as is looong to test.
-write.csv(clean_us_sp, "data/clean_us_sp.csv")
+write.csv(clean_sp, "data/clean_trails_sp.csv", row.names = F)
 #load it when needed
-clean_us_sp <- read.csv("data/clean_us_sp.csv", h = T)
+#to HERE-----
+clean_trails_sp <- read.csv("data/clean_trails_sp.csv", h = T)
 
+colnames(clean_trails_sp) <- c("gen_sp", "trails_matched_name", "trails_synonym", "trait_final")
+trails3 <- merge(trails2, clean_trails_sp, all.x = TRUE)
+dim(trails3)
+dim(trails2) #check!
 
 ```
 We can also use the 'urban_rural.csv' comparision, but I am skipiing it for now. This data is agregated to mean, but in notebook there is more resolution.
