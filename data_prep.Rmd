@@ -38,15 +38,15 @@ levels(lin$Herbatio) <- c("GamlaUppsala", "Danmark", "Gottsunda", "Haga",
 lin$gen_sp <- paste(lin$Genus, lin$species)
 #SKIP from here----- (used last time with an un-updated func)
 #I put it in a for loop to avoid time-outs 537
-clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
-for(i in c(100,200,300,400,500,600)){
-  temp <- cleanSpecies(lin$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
-  clean_sp <- rbind(clean_sp, temp)
-}
-clean_sp <- clean_sp[-1,]
+#clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
+#for(i in c(100,200,300,400,500,600)){
+ # temp <- cleanSpecies(lin$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+#  clean_sp <- rbind(clean_sp, temp)
+#}
+#clean_sp <- clean_sp[-1,]
 
 #save output as is looong to test.
-write.csv(clean_sp, "data/clean_linne_sp.csv", row.names = F)
+#write.csv(clean_sp, "data/clean_linne_sp.csv", row.names = F)
 #To HERE-----
 
 #load it when needed
@@ -54,8 +54,8 @@ clean_sp <- read.csv("data/clean_linne_sp.csv", h = T)
 colnames(clean_sp) <- c("gen_sp", "lin_matched_name", "lin_synonym", "lin_final")
 
 clean_sp[which(is.na(clean_sp$lin_matched_name)),]
-clean_sp[-grep(pattern = " ", clean_sp$lin_matched_name),]
 clean_sp <- clean_sp[-which(is.na(clean_sp$gen_sp)),]
+clean_sp[-grep(pattern = " ", clean_sp$lin_matched_name),]
 head(clean_sp)
 #to fix a few by Joe
 
@@ -129,14 +129,14 @@ traits$gen_sp <- paste(traits$Genus, traits$Species)
 
 #SKIP from HERE-------
 #I put it in a for loop to avoid time-outs ~500
-clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
-for(i in c(100,200,300,400,500)){
-  temp <- cleanSpecies(species = traits$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
-  clean_sp <- rbind(clean_sp, temp)
-}
-clean_sp <- clean_sp[-1,]
+#clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
+#for(i in c(100,200,300,400,500)){
+ # temp <- cleanSpecies(species = traits$gen_sp[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+  #clean_sp <- rbind(clean_sp, temp)
+#}
+#clean_sp <- clean_sp[-1,]
 #save output as is looong to test.
-write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
+#write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
 #to HERE-----
 
 #load it when needed
@@ -240,23 +240,25 @@ length(spec)
 
 #SKIP from HERE-------
 #I put it in a for loop to avoid time-outs ~500
-clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
-for(i in c(100,200,300,400)){
-  temp <- cleanSpecies(species = spec[(i-99):i]) #maybe can be repeated with other database. now db == Itis
-  clean_sp <- rbind(clean_sp, temp)
-}
-clean_sp <- clean_sp[-1,]
+#clean_sp <- data.frame(species = NA, matched_names = NA, synonym_names = NA, final_names = NA)
+#for(i in c(100,200,300,400)){
+ # temp <- cleanSpecies(species = spec[(i-99):i]) #maybe can be repeated with other database. now db == Itis
+#  clean_sp <- rbind(clean_sp, temp)
+#}
+#clean_sp <- clean_sp[-1,]
 
 #save output as is looong to test.
-write.csv(clean_sp, "data/clean_trails_sp.csv", row.names = F)
+#write.csv(clean_sp, "data/clean_trails_sp.csv", row.names = F)
 #load it when needed
 #to HERE-----
 clean_trails_sp <- read.csv("data/clean_trails_sp.csv", h = T)
+dim(clean_trails_sp)
 colnames(clean_trails_sp) <- c("gen_sp", "trails_matched_name", "trails_synonym", "trait_final")
 
 #check stuff
 clean_trails_sp[which(is.na(clean_trails_sp$trails_matched_name)),]
 clean_trails_sp <- clean_trails_sp[-which(is.na(clean_trails_sp$gen_sp)),]
+clean_trait_sp[-grep(pattern = " ", clean_trait_sp$trait_matched_name),]
 head(clean_trails_sp)
 #to fix a few by Joe
 
@@ -279,6 +281,11 @@ Now let's combine the three files
 # I want a sp, herbatio, habitat, lineus, us, traits spreadsheet.
 head(lin,10) #merge by Herbatio and lin_matched_name 
 head(trails3, 10) #merge by trails_matched name and Herbatio
+which(!lin$Herbatio %in% trails3$Herbatio)
+which(!trails3$Herbatio %in% lin$Herbatio)
+#good
+lin[which(!lin$lin_matched_name %in% trails3$trails_matched_name),] #some trees!
+which(!trails3$trails_matched_name %in% lin$lin_matched_name) #a lot...
 
 # merge by 
 lin$link <- paste(lin$lin_matched_name, lin$Herbatio)
@@ -287,38 +294,69 @@ colnames(lin)[2] <- "Herbatio_lin"
 colnames(trails3)[5] <- "Herbatio_us"
 colnames(lin)[1] <- "gen_sp_lin"
 colnames(trails3)[1] <- "gen_sp_us"
-temp <- merge(lin, trails3, by = "link", all = TRUE)
+lin[which(!lin$link %in% trails3$link),] #some trees!
+which(!trails3$link %in% lin$link) #a lot...
+
+temp <- merge(trails3, lin, by = "link", all = TRUE)
 head(temp) #NEED TO CHECK. LOOKS OK, but NOT MANUEL CHECKING DONE YET
 temp$Presence_lin[is.na(temp$Presence_lin)] <- 0
 temp$Presence_us[is.na(temp$Presence_us)] <- 0
 
-subset(temp, Presence_us == 0)
-
 head(traits3)
 colnames(traits3)[2] <- "gen_sp_traits"
-#check next line, assumes good matching...
-temp$final_gen_sp <- ifelse(is.na(temp$trails_matched_name), temp$lin_matched_name, temp$trails_matched_name) #unfactor first!
+#check matching...
+colnames(temp)
+temp[which(is.na(temp$trails_matched_name)),c(1,16,19)]
+#check NA Danmark  etc... 
+
+temp$final_gen_sp <- ifelse(is.na(temp$trails_matched_name), as.character(temp$lin_matched_name), as.character(temp$trails_matched_name)) 
+duplicated(traits3$trait_matched_name) #5 dup's!!
 dat <- merge(temp, traits3, by.x = "final_gen_sp", by.y = "trait_matched_name", all.x = TRUE) 
+dim(temp)
+dim(dat)
 head(dat)
 
 #now we can add origin on here
-temp <- unique(dat$final_gen_sp)
-temp$origin <- NA
+temp <- data.frame(final_gen_sp = unique(dat$final_gen_sp), origin = NA)
 for(i in 1:length(temp$final_gen_sp)){
     res <- flora_europaea(temp$final_gen_sp[i])
     temp$origin[i] <- ifelse("Sweden" %in% res$native, "native",
                           ifelse("Sweden" %in% res$exotic, "exotic",
                                  "not_in_fe"))
-  }
+}
+head(temp, 50)
+#merge
+dat2 <- merge(dat, temp, all.x = TRUE)
+head(dat2)
 
+#Last clean a bit columns:
+dat3 <- dat2[,c(1,3,7,8,12,13,14,20,24:28,31,32)]
+head(dat3)
+
+#things can be improved:
+#- remove 0's when casting us dataset
+#- Refill herbatio's ¿?
 ```
 
 Save data
 
 ```{r}
-write.csv(dat, "data/used_data.csv")
+write.csv(dat3, "data/used_data.csv")
 ```
 
+
+Explore a bit
+
+```{r}
+temp <- subset(dat3, Presence_lin == 1)
+head(temp)
+temp$Presence_us0 <- ifelse(temp$Presence_us > 0, 1, 0)
+
+temp$loss <- temp$Presence_lin - temp$Presence_us0
+temp$loss #almost all loss???
+sum(temp$loss) / length(temp$loss) #86% loss! SOmething is wrong...
+temp[,c(1,6,8,16,17)]
+```
 
 
 

@@ -75,8 +75,10 @@ And for the traits data:
 160            Myosotis spp.           Myosotis      Myosotis        <NA>
 
 For trails data:
-                 gen_sp trails_matched_name trails_synonym trait_final
-286 Rumexmeno acetosa L.                <NA>           <NA>        <NA>
+                      gen_sp trait_matched_name trait_synonym trait_final
+106          Arabidopsis sp.        Arabidopsis   Arabidopsis        <NA>
+128 Capsella bursa -pastoris               <NA>          <NA>        <NA>
+160            Myosotis spp.           Myosotis      Myosotis        <NA>
 
 
 4) 
