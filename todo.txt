@@ -46,3 +46,37 @@ Joe:
 [53] 8 Praedium Kiattinge            9 Pratum Nyflense              
 [55] 10 Praedium Husby               1 Sylva Deserta                
 [57] 2 Palus Jumkilensis             3 Plateae Urbis Upsaliensis 
+
+3) Some species are not recognized and need manual checking:
+                        gen_sp lin_matched_name lin_synonym lin_final
+6             Arbutus Uva urfi          Arbutus     Arbutus      <NA>
+16               Cerefus Padus             <NA>        <NA>      <NA>
+135               Elvela Mitra           Elvela      Elvela      <NA>
+168               Ophrys Nidus           Ophrys      Ophrys      <NA>
+180         Ranuculus Ficaria:             <NA>        <NA>      <NA>
+263            Lichen nivalis:           Lichen      Lichen      <NA>
+290           Ribes Vua crispa            Ribes       Ribes      <NA>
+297          TuffiIago Farfara             <NA>        <NA>      <NA>
+323      Convolvulus Polygonum      Convolvulus Convolvulus      <NA>
+324              Crataeus Aira             <NA>        <NA>      <NA>
+413        Buphtalmo tinctorio             <NA>        <NA>      <NA>
+425           Comarum palustre             <NA>        <NA>      <NA>
+436            Ethusa Cynapium           Ethusa      Ethusa      <NA>
+444       Jungermannia pusilla             <NA>        <NA>      <NA>
+468           Ophrys Monorchis             <NA>        <NA>      <NA>
+470   Pedicularis SceptCarolin      Pedicularis Pedicularis      <NA>
+480         Scabiosam arvensem             <NA>        <NA>      <NA>
+509 Chenopodium Bonus henricus      Chenopodium Chenopodium      <NA>
+
+And for the traits data:
+                      gen_sp trait_matched_name trait_synonym trait_final
+106          Arabidopsis sp.        Arabidopsis   Arabidopsis        <NA>
+128 Capsella bursa -pastoris               <NA>          <NA>        <NA>
+160            Myosotis spp.           Myosotis      Myosotis        <NA>
+
+For trails data:
+                 gen_sp trails_matched_name trails_synonym trait_final
+286 Rumexmeno acetosa L.                <NA>           <NA>        <NA>
+
+
+4) 
