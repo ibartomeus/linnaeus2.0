@@ -9,7 +9,7 @@
 
 Joe:
 
-1) In linne data check why those entries have no species:     
+1) In linneaus.csv data check why those entries have no species:     
     Herbatio            Micro.habitat Genus species notes gen_sp
 295   Ultuna      8 Colles Ultunensis                  NA       
 368     Haga          8 Tumulus Regis                  NA       
