@@ -36,4 +36,43 @@ levels(clean_linneaus$Habitat_groups)<-list(
              "1 Tegelhagen")
   )
 
-## 3.
+## 3. checked and changed species names
+## copy and check clean_linne_sp file
+test<-clean_linne_sp
+## manually change species names using gsub
+test$species<-gsub("Arbutus Uva urfi", "Arctostaphylos uva-ursi", test$species)
+test$species<-gsub("Cerefus Padus", "Prunus padus", test$species)
+## perhaps remove this species as it is a fungus
+test$species<-gsub("Elvela Mitra", "Gyromitra infula", test$species)
+##
+test$species<-gsub("Ophrys Nidus", "Neottia nidus-avis", test$species)
+test$species<-gsub("Ranuculus Ficaria:", "Ficaria verna", test$species)
+## perhaps remove this species as it is a lichen
+test$species<-gsub("Lichen nivalis:", "Lepraria nivalis", test$species)
+##
+test$species<-gsub("Ribes Vua crispa", "Ribes uva-crispa", test$species)
+test$species<-gsub("TuffiIago Farfara", "Tussilago farfara", test$species)
+test$species<-gsub("Convolvulus Polygonum", "Polygonum convolvulus", test$species)
+test$species<-gsub("Crataeus Aira", "Sorbus aria", test$species)
+test$species<-gsub("Buphtalmo tinctorio", "Cota tinctoria", test$species)
+test$species<-gsub("Comarum palustre", "Potentilla palustris", test$species)
+test$species<-gsub("Ethusa Cynapium", "Aethusa cynapium", test$species)
+## perhaps remove this species as it is a liverwort
+test$species<-gsub("Jungermannia pusilla", "Blasia pusilla", test$species)
+##
+test$species<-gsub("Ophrys Monorchis", "Herminium monorchis", test$species)
+test$species<-gsub("Pedicularis SceptCarolin", "Pedicularis sceptrum-carolinum", test$species)
+test$species<-gsub("Scabiosam arvensem", "Knautia arvensis", test$species)
+test$species<-gsub("Chenopodium Bonus henricus", "Blitum bonus-henricus", test$species)
+
+## checked and changed species names clean_trait_sp
+clean_trait_sp$species<-gsub("Capsella bursa -pastoris", "Capsella bursa-pastoris", clean_trait_sp$species)
+## possibly remove these as they have no positive species ID
+clean_trait_sp$species<-gsub("Arabidopsis sp.", "", clean_trait_sp$species)
+clean_trait_sp$species<-gsub(" Myosotis spp.", "", clean_trait_sp$species)
+
+## checked and changed species names clean_trails_sp
+clean_trails_sp$species<-gsub("Capsella bursa -pastoris", "Capsella bursa-pastoris", clean_trails_sp$species)
+## possibly remove these as they have no positive species ID
+clean_trails_sp$species<-gsub("Arabidopsis sp.", "", clean_trails_sp$species)
+clean_trails_sp$species<-gsub(" Myosotis spp.", "", clean_trails_sp$species)
