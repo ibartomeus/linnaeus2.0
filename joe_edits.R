@@ -37,33 +37,31 @@ levels(clean_linneaus$Habitat_groups)<-list(
   )
 
 ## 3. checked and changed species names
-## copy and check clean_linne_sp file
-test<-clean_linne_sp
 ## manually change species names using gsub
-test$species<-gsub("Arbutus Uva urfi", "Arctostaphylos uva-ursi", test$species)
-test$species<-gsub("Cerefus Padus", "Prunus padus", test$species)
+clean_linne_sp$species<-gsub("Arbutus Uva urfi", "Arctostaphylos uva-ursi", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Cerefus Padus", "Prunus padus", clean_linne_sp$species)
 ## perhaps remove this species as it is a fungus
-test$species<-gsub("Elvela Mitra", "Gyromitra infula", test$species)
+clean_linne_sp$species<-gsub("Elvela Mitra", "Gyromitra infula", clean_linne_sp$species)
 ##
-test$species<-gsub("Ophrys Nidus", "Neottia nidus-avis", test$species)
-test$species<-gsub("Ranuculus Ficaria:", "Ficaria verna", test$species)
+clean_linne_sp$species<-gsub("Ophrys Nidus", "Neottia nidus-avis", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Ranuculus Ficaria:", "Ficaria verna", clean_linne_sp$species)
 ## perhaps remove this species as it is a lichen
-test$species<-gsub("Lichen nivalis:", "Lepraria nivalis", test$species)
+clean_linne_sp$species<-gsub("Lichen nivalis:", "Lepraria nivalis", clean_linne_sp$species)
 ##
-test$species<-gsub("Ribes Vua crispa", "Ribes uva-crispa", test$species)
-test$species<-gsub("TuffiIago Farfara", "Tussilago farfara", test$species)
-test$species<-gsub("Convolvulus Polygonum", "Polygonum convolvulus", test$species)
-test$species<-gsub("Crataeus Aira", "Sorbus aria", test$species)
-test$species<-gsub("Buphtalmo tinctorio", "Cota tinctoria", test$species)
-test$species<-gsub("Comarum palustre", "Potentilla palustris", test$species)
-test$species<-gsub("Ethusa Cynapium", "Aethusa cynapium", test$species)
+clean_linne_sp$species<-gsub("Ribes Vua crispa", "Ribes uva-crispa", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("TuffiIago Farfara", "Tussilago farfara", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Convolvulus Polygonum", "Polygonum convolvulus", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Crataeus Aira", "Sorbus aria", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Buphtalmo tinctorio", "Cota tinctoria", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Comarum palustre", "Potentilla palustris", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Ethusa Cynapium", "Aethusa cynapium", clean_linne_sp$species)
 ## perhaps remove this species as it is a liverwort
-test$species<-gsub("Jungermannia pusilla", "Blasia pusilla", test$species)
+clean_linne_sp$species<-gsub("Jungermannia pusilla", "Blasia pusilla", clean_linne_sp$species)
 ##
-test$species<-gsub("Ophrys Monorchis", "Herminium monorchis", test$species)
-test$species<-gsub("Pedicularis SceptCarolin", "Pedicularis sceptrum-carolinum", test$species)
-test$species<-gsub("Scabiosam arvensem", "Knautia arvensis", test$species)
-test$species<-gsub("Chenopodium Bonus henricus", "Blitum bonus-henricus", test$species)
+clean_linne_sp$species<-gsub("Ophrys Monorchis", "Herminium monorchis", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Pedicularis SceptCarolin", "Pedicularis sceptrum-carolinum", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Scabiosam arvensem", "Knautia arvensis", clean_linne_sp$species)
+clean_linne_sp$species<-gsub("Chenopodium Bonus henricus", "Blitum bonus-henricus", clean_linne_sp$species)
 
 ## checked and changed species names clean_trait_sp
 clean_trait_sp$species<-gsub("Capsella bursa -pastoris", "Capsella bursa-pastoris", clean_trait_sp$species)
