@@ -62,15 +62,22 @@ clean_linne_sp$species<-gsub("Ophrys Monorchis", "Herminium monorchis", clean_li
 clean_linne_sp$species<-gsub("Pedicularis SceptCarolin", "Pedicularis sceptrum-carolinum", clean_linne_sp$species)
 clean_linne_sp$species<-gsub("Scabiosam arvensem", "Knautia arvensis", clean_linne_sp$species)
 clean_linne_sp$species<-gsub("Chenopodium Bonus henricus", "Blitum bonus-henricus", clean_linne_sp$species)
+## saved to data folder
+write.csv(clean_linne_sp, file="clean_linne_sp.csv")
 
 ## checked and changed species names clean_trait_sp
 clean_trait_sp$species<-gsub("Capsella bursa -pastoris", "Capsella bursa-pastoris", clean_trait_sp$species)
 ## possibly remove these as they have no positive species ID
-clean_trait_sp$species<-gsub("Arabidopsis sp.", "", clean_trait_sp$species)
-clean_trait_sp$species<-gsub(" Myosotis spp.", "", clean_trait_sp$species)
+clean_trait_sp$species<-gsub("Arabidopsis sp.", "Arabidopsis", clean_trait_sp$species)
+clean_trait_sp$species<-gsub("Myosotis spp.", "Myosotis", clean_trait_sp$species)
+## saved to data folder
+write.csv(clean_trait_sp, file="clean_trait_sp.csv")
+
 
 ## checked and changed species names clean_trails_sp
 clean_trails_sp$species<-gsub("Capsella bursa -pastoris", "Capsella bursa-pastoris", clean_trails_sp$species)
 ## possibly remove these as they have no positive species ID
 clean_trails_sp$species<-gsub("Arabidopsis sp.", "", clean_trails_sp$species)
-clean_trails_sp$species<-gsub(" Myosotis spp.", "", clean_trails_sp$species)
+clean_trails_sp$species<-gsub("Myosotis spp.", "Myosotis", clean_trails_sp$species)
+## saved to data folder
+write.csv(clean_trails_sp, file="clean_trails_sp.csv")
