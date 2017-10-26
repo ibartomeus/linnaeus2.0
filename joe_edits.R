@@ -77,7 +77,7 @@ write.csv(clean_trait_sp, file="clean_trait_sp.csv")
 ## checked and changed species names clean_trails_sp
 clean_trails_sp$species<-gsub("Capsella bursa -pastoris", "Capsella bursa-pastoris", clean_trails_sp$species)
 ## possibly remove these as they have no positive species ID
-clean_trails_sp$species<-gsub("Arabidopsis sp.", "", clean_trails_sp$species)
+clean_trails_sp$species<-gsub("Arabidopsis spp.", "Arabidopsis", clean_trails_sp$species)
 clean_trails_sp$species<-gsub("Myosotis spp.", "Myosotis", clean_trails_sp$species)
 ## saved to data folder
 write.csv(clean_trails_sp, file="clean_trails_sp.csv")
