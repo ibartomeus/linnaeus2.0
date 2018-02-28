@@ -1,28 +1,41 @@
 ---
 title: "analysis"
-author: "I. Bartomeus"
+author: "I. Bartomeus, ..."
 date: "10/2/2017"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Analysis:
+Analysis to do:
 
-- Fig 1: Map (with old anc current city extent if posible)
+- Fig 1: Map (with old and current city extent if posible). Not done yet.
 
-- % of persisting or lost plants per transect. New plants can be exotic, human additions, not recorded by linneaus (CAVEAT). Relate to Vellend et al. richness loss discusion. Fig 2
+- % of persisting or lost plants per transect. New plants can be exotic, human additions, OR not recorded by linneaus (CAVEAT). 
+Relate to Vellend et al. richness loss discusion. Fig 2
 
 ```{r}
+dat <- read.csv("data/used_data.csv", h = T, row.names = 1)
 head(dat)
+temp <- subset(dat, Presence_lin == 1)
+head(temp)
+temp$Presence_us0 <- ifelse(temp$Presence_us > 0, 1, 0)
+
+temp$loss <- temp$Presence_lin - temp$Presence_us0
+temp$loss #almost all loss???
+sum(temp$loss) / length(temp$loss) #86% loss! Something is wrong with data processing...¿?
+temp[,c(1,6,8,16,17)]
 
 
 ```
 
 
-- Overall persistance in number of species, showing proportion of each group belonging to anual / tubular / color / N (and maybe self-comp) Fig 3 : Chi Sqr?
+- Overall persistance in number of species, showing proportion of each group belonging to anual / tubular / color / N (and maybe self-comp) 
+Fig 3 : test with a Chi Sqr?
 
 - Potential Fig 4: Porp of losers per habitat. Are some habitats more affected than others? Maybe CWM plots? Relate to consequences for pollinators.
 
