@@ -29,6 +29,9 @@ Historical data:
 lin <- read.csv("raw_data/linneaus.csv", h = T)
 head(lin)
 
+### 1. removed entries in linneaus.csv data that had no species
+lin <- lin[c(1:294, 296:367, 369:474, 476:495, 497:538),]
+
 #todo: 
 #uncap transects
 unique(lin$Herbatio)
@@ -47,17 +50,47 @@ lin$gen_sp <- paste(lin$Genus, lin$species)
 
 #save output as is looong to test.
 #write.csv(clean_sp, "data/clean_linne_sp.csv", row.names = F)
+#load it when needed
 #To HERE-----
 
-#load it when needed
-clean_sp <- read.csv("data/clean_linne_sp.csv", h = T)
+#Joe cleaning (done once and saved):
+clean_linne_sp <- read.csv("data/clean_linne_sp.csv", h = T, stringsAsFactors = FALSE)
+head(clean_linne_sp)
+## manually change species names using gsub
+clean_linne_sp[which(clean_linne_sp$species == "Arbutus Uva urfi"), "synonym_names"] <- "Arctostaphylos uva-ursi"
+clean_linne_sp[which(clean_linne_sp$species == "Cerefus Padus"), "synonym_names"] <- "Prunus padus"
+## perhaps remove this species as it is a fungus
+clean_linne_sp[which(clean_linne_sp$species == "Elvela Mitra"), "synonym_names"] <- "Gyromitra infula"
+clean_linne_sp[which(clean_linne_sp$species == "Ophrys Nidus"), "synonym_names"] <- "Neottia nidus-avis"
+clean_linne_sp[which(clean_linne_sp$species == "Ranuculus Ficaria:"), "synonym_names"] <- "Ficaria verna"
+## perhaps remove this species as it is a lichen
+clean_linne_sp[which(clean_linne_sp$species == "Lichen nivalis:"), "synonym_names"] <- "Lepraria nivalis"
+clean_linne_sp[which(clean_linne_sp$species == "Ribes Vua crispa"), "synonym_names"] <- "Ribes uva-crispa"
+clean_linne_sp[which(clean_linne_sp$species == "TuffiIago Farfara"), "synonym_names"] <- "Tussilago farfara"
+clean_linne_sp[which(clean_linne_sp$species == "Convolvulus Polygonum"), "synonym_names"] <- "Polygonum convolvulus"
+clean_linne_sp[which(clean_linne_sp$species == "Crataeus Aira"), "synonym_names"] <- "Sorbus aria"
+clean_linne_sp[which(clean_linne_sp$species == "Buphtalmo tinctorio"), "synonym_names"] <- "Cota tinctoria"
+clean_linne_sp[which(clean_linne_sp$species == "Comarum palustre"), "synonym_names"] <- "Potentilla palustris"
+clean_linne_sp[which(clean_linne_sp$species == "Ethusa Cynapium"), "synonym_names"] <- "Aethusa cynapium"
+## perhaps remove this species as it is a liverwort
+clean_linne_sp[which(clean_linne_sp$species == "Jungermannia pusilla"), "synonym_names"] <- "Blasia pusilla"
+clean_linne_sp[which(clean_linne_sp$species == "Ophrys Monorchis"), "synonym_names"] <- "Herminium monorchis"
+clean_linne_sp[which(clean_linne_sp$species == "Pedicularis SceptCarolin"), "synonym_names"] <- "Pedicularis sceptrum-carolinum"
+clean_linne_sp[which(clean_linne_sp$species == "Scabiosam arvensem"), "synonym_names"] <- "Knautia arvensis"
+clean_linne_sp[which(clean_linne_sp$species == "Chenopodium Bonus henricus"), "synonym_names"] <- "Blitum bonus-henricus"
+## saved to data folder
+head(clean_linne_sp)
+write.csv(clean_linne_sp, file="data/clean_linne_sp2.csv")
+
+#load the cleaned data:
+clean_sp <- read.csv("data/clean_linne_sp2.csv", h = T, row.names = 1)
+head(clean_sp)
 colnames(clean_sp) <- c("gen_sp", "lin_matched_name", "lin_synonym", "lin_final")
 
 clean_sp[which(is.na(clean_sp$lin_matched_name)),]
 clean_sp <- clean_sp[-which(is.na(clean_sp$gen_sp)),]
 clean_sp[-grep(pattern = " ", clean_sp$lin_matched_name),]
 head(clean_sp)
-#to fix a few by Joe
 
 str(lin)
 str(clean_sp)
@@ -65,10 +98,9 @@ clean_sp2 <- clean_sp[-which(duplicated(clean_sp$gen_sp) == TRUE),]
 lin2 <- merge(lin, clean_sp2, all.x = TRUE)
 dim(clean_sp2)
 dim(lin)
-which(!clean_sp$gen_sp %in% lin$gen_sp)
+clean_sp[which(!clean_sp$gen_sp %in% lin$gen_sp),]
 which(!lin$gen_sp %in% clean_sp$gen_sp)
-sort(clean_sp$gen_sp) == sort(lin$gen_sp)
-dim(lin2) #check!
+dim(lin2) 
 lin <- lin2
 
 #check other stuff
@@ -81,13 +113,40 @@ lin[which(lin$gen_sp == " "),] #check why!
 
 #categorize microhabitats
 unique(lin$Micro.habitat) #I think catogeries can be made.
-#Pratum (Praedium?)
-#Palus
-#Rupes
-#Silva /Pascua
-#Agri
-#Ripa /fluvius
-#...
+
+## 2. grouped factors into categories
+## create new column by using micro-habitat data
+lin$Habitat_groups <- lin$Micro.habitat
+## set data to as factor
+lin$Habitat_groups <- as.factor(clean_linneaus$Habitat_groups)
+## re group factors in new column
+levels(lin$Habitat_groups) <- list(
+  Rupes=c("1 Rupes Lassbyenses", "10 Rupes Gottsundenses", "3 Rupes"), 
+  Silva=c("2 Pascua Sylvatica", "12 Silva Regia", "5 Silva Regia", 
+          "1 Sylva Deserta", "4 Saltus Rickombergensis", "5 Nemus Regium", 
+          "6 Lucus Norrbyensis"),
+  Palus=c("3 Palus Norrbyensis", "2 Palus Jumkilensis"), 
+  Pratum=c("4 Pratum Norrbyense", "7 Pratum Gottsundense", 
+                    "11 Praedium Wardsattra", "1 Pratum Regium", 
+                    "2 Pratumbarbyense", "3 Prata Ekensia & Fallensia", 
+                    "3 Pratum Saltpetterángen", "4 Prata", 
+                    "8 Praedium Kiattinge", "9 Pratum Nyflense", 
+                    "10 Praedium Husby", "5 Prataflogstadensia & Hagensia"),
+  Agros=c("2 Agri Upsalieness", "2 Agri Waxalenses", "3 Versurae Agrorum"),
+  Fluvius=c("2 Ripae", "2 Ripa fluvii UPSALIENSIS", "3 Fluvius", 
+            "6 Rivulus", "6 Fons Sandwiksensis","5 Uliginosa Amni", 
+            "2 Piscina"),
+  Urbis=c("1Tecta Upsaliensia", "3 Plateae Urbis Upsaliensis", 
+          "1 Via Upsaliensis", "1 Tecta Upsaliensia", "4 Campus Polonicus",
+          "Tegelhagen", "1 SEPTA"),
+  Rusticus=c("9 Praecipitia Gottsundensia", "6 Lucus Norrbyensis", "7 Haga",
+             "1 Luthagen", "5 Tórnby", "4 Falla", "5 Lucus Nantunensis",
+             "9 Liljeholmen", "7 Ultuna", "5 Wittulsbergensis",
+             "4 Tumuli Upsaliensis", "4 Templo Danemarkensi",
+             "7 Templi Borfensis", "3 Lupuleta", "8 Bovilia Pastoris",
+             "1 Tegelhagen")
+  )
+head(lin)
 
 #Add presence
 lin$Presence_lin <- 1
@@ -136,23 +195,34 @@ traits$gen_sp <- paste(traits$Genus, traits$Species)
 #}
 #clean_sp <- clean_sp[-1,]
 #save output as is looong to test.
-#write.csv(clean_sp, "data/clean_trait_sp.csv", row.names = F)
+#write.csv(clean_sp, "data/clean_traits_sp.csv", row.names = F)
 #to HERE-----
 
+#Joe cleaning (done once and saved):
+clean_traits_sp <- read.csv("data/clean_traits_sp.csv", h = T, stringsAsFactors = FALSE)
+head(clean_traits_sp)
+## manually change species names using gsub
+clean_traits_sp[which(clean_traits_sp$species == "Capsella bursa -pastoris"), "synonym_names"] <- "Capsella bursa-pastoris"
+## possibly remove these as they have no positive species ID
+clean_traits_sp[which(clean_traits_sp$species == "Arabidopsis sp."), "synonym_names"] <- "Arabidopsis"
+clean_traits_sp[which(clean_traits_sp$species == "Myosotis spp."), "synonym_names"] <- "Myosotis"
+head(clean_traits_sp)
+write.csv(clean_traits_sp, file="data/clean_traits_sp2.csv")
+
 #load it when needed
-clean_trait_sp <- read.csv("data/clean_trait_sp.csv", h = T)
+clean_trait_sp <- read.csv("data/clean_traits_sp2.csv", h = T, row.names = 1)
 colnames(clean_trait_sp) <- c("gen_sp", "trait_matched_name", "trait_synonym", "trait_final")
+head(clean_trait_sp)
 
 #check stuff
-clean_trait_sp[which(is.na(clean_trait_sp$trait_matched_name)),]
-clean_trait_sp[-grep(pattern = " ", clean_trait_sp$trait_matched_name),]
+clean_trait_sp[which(is.na(clean_trait_sp$trait_synonym)),]
+clean_trait_sp[-grep(pattern = " ", clean_trait_sp$trait_synonym),]
 clean_trait_sp <- clean_trait_sp[-which(is.na(clean_trait_sp$gen_sp)),]
 head(clean_trait_sp)
-#to fix a few by Joe
 
 #dup
 clean_trait_sp[which(duplicated(clean_trait_sp$gen_sp) == TRUE),]
-clean_trait_sp[which(duplicated(clean_trait_sp$trait_matched_name) == TRUE),]
+clean_trait_sp[which(duplicated(clean_trait_sp$trait_synonym) == TRUE),]
 clean_trait_sp2 <- clean_trait_sp[-which(duplicated(clean_trait_sp$gen_sp) == TRUE),]
 traits2 <- merge(traits, clean_trait_sp2, all.x = TRUE)
 dim(traits)
@@ -174,6 +244,9 @@ traits3 <- merge(traits2, s2, by.x = "trait_matched_name",
 head(traits3)
 traits3[-which(is.na(traits3$compatibility)),] #only 8 matches :(
 #See for how many Species we are missing traits and add to trait list.
+#Maybe is a match names issue? 
+#MOre work can be done here.
+
 
 #Need to add origin for the new ones based in fe(){originr}
 #traits$origin <- NA
@@ -183,7 +256,7 @@ traits3[-which(is.na(traits3$compatibility)),] #only 8 matches :(
 #                          ifelse("Sweden" %in% res$exotic, "exotic",
 #                                 "not_in_fe"))
 #  }
-#Do with final list of plants!
+#Do with final list of plants! See below!
 ```
 Re-surveys
 
@@ -246,12 +319,26 @@ length(spec)
 #  clean_sp <- rbind(clean_sp, temp)
 #}
 #clean_sp <- clean_sp[-1,]
-
 #save output as is looong to test.
 #write.csv(clean_sp, "data/clean_trails_sp.csv", row.names = F)
 #load it when needed
 #to HERE-----
-clean_trails_sp <- read.csv("data/clean_trails_sp.csv", h = T)
+
+#Joe cleaning (done once and saved):
+clean_trails_sp <- read.csv("data/clean_trails_sp.csv", h = T, stringsAsFactors = FALSE)
+head(clean_trails_sp)
+## manually change species names using gsub
+clean_trails_sp[which(clean_trails_sp$species == "Capsella bursa -pastoris"), "synonym_names"] <- "Capsella bursa-pastoris"
+## possibly remove these as they have no positive species ID
+clean_trails_sp[which(clean_trails_sp$species == "Arabidopsis sp."), "synonym_names"] <- "Arabidopsis"
+clean_trails_sp[which(clean_trails_sp$species == "Myosotis spp."), "synonym_names"] <- "Myosotis"
+head(clean_trails_sp)
+write.csv(clean_trails_sp, file="data/clean_traits_sp2.csv")
+
+
+#load
+clean_trails_sp <- read.csv("data/clean_trails_sp2.csv", h = T, row.names = 1)
+head(clean_trails_sp)
 dim(clean_trails_sp)
 colnames(clean_trails_sp) <- c("gen_sp", "trails_matched_name", "trails_synonym", "trait_final")
 
@@ -260,16 +347,16 @@ clean_trails_sp[which(is.na(clean_trails_sp$trails_matched_name)),]
 clean_trails_sp <- clean_trails_sp[-which(is.na(clean_trails_sp$gen_sp)),]
 clean_trait_sp[-grep(pattern = " ", clean_trait_sp$trait_matched_name),]
 head(clean_trails_sp)
-#to fix a few by Joe
 
 #dup
 clean_trails_sp[which(duplicated(clean_trails_sp$gen_sp) == TRUE),]
-clean_trails_sp[which(duplicated(clean_trails_sp$trait_matched_name) == TRUE),]
+clean_trails_sp[which(duplicated(clean_trails_sp$trails_synonym) == TRUE),]
 clean_trails_sp2 <- clean_trails_sp[-which(duplicated(clean_trails_sp$gen_sp) == TRUE),]
 
 trails3 <- merge(trails2, clean_trails_sp, all.x = TRUE)
 dim(trails3)
-dim(trails2) #check!
+dim(trails2) 
+head(trails3)
 
 ```
 
@@ -279,17 +366,17 @@ Now let's combine the three files
 
 ```{r}
 # I want a sp, herbatio, habitat, lineus, us, traits spreadsheet.
-head(lin,10) #merge by Herbatio and lin_matched_name 
-head(trails3, 10) #merge by trails_matched name and Herbatio
+head(lin,10) #merge by Herbatio and lin_synonym 
+head(trails3, 10) #merge by trails_synonym name and Herbatio
 which(!lin$Herbatio %in% trails3$Herbatio)
 which(!trails3$Herbatio %in% lin$Herbatio)
 #good
-lin[which(!lin$lin_matched_name %in% trails3$trails_matched_name),] #some trees!
-which(!trails3$trails_matched_name %in% lin$lin_matched_name) #a lot...
+lin[which(!lin$lin_synonym %in% trails3$trails_synonym),] #a lot...
+which(!trails3$trails_synonym %in% lin$lin_synonym) #a lot...
 
 # merge by 
-lin$link <- paste(lin$lin_matched_name, lin$Herbatio)
-trails3$link <- paste(trails3$trails_matched_name, trails3$Herbatio)
+lin$link <- paste(lin$lin_synonym, lin$Herbatio)
+trails3$link <- paste(trails3$trails_synonym, trails3$Herbatio)
 colnames(lin)[2] <- "Herbatio_lin"
 colnames(trails3)[5] <- "Herbatio_us"
 colnames(lin)[1] <- "gen_sp_lin"
@@ -306,14 +393,14 @@ head(traits3)
 colnames(traits3)[2] <- "gen_sp_traits"
 #check matching...
 colnames(temp)
-temp[which(is.na(temp$trails_matched_name)),c(1,16,19)]
+temp[which(is.na(temp$trails_synonym)),c(1,16,19)]
 #check NA Danmark  etc... 
 
-temp$final_gen_sp <- ifelse(is.na(temp$trails_matched_name), as.character(temp$lin_matched_name), as.character(temp$trails_matched_name)) 
-duplicated(traits3$trait_matched_name) #5 dup's!!
-dat <- merge(temp, traits3, by.x = "final_gen_sp", by.y = "trait_matched_name", all.x = TRUE) 
+temp$final_gen_sp <- ifelse(is.na(temp$trails_synonym), as.character(temp$lin_synonym), as.character(temp$trails_synonym)) 
+duplicated(traits3$trait_synonym) #5 dup's!!
+dat <- merge(temp, traits3, by.x = "final_gen_sp", by.y = "trait_synonym", all.x = TRUE) 
 dim(temp)
-dim(dat)
+dim(dat) #!!! FIX
 head(dat)
 
 #now we can add origin on here
@@ -324,13 +411,13 @@ for(i in 1:length(temp$final_gen_sp)){
                           ifelse("Sweden" %in% res$exotic, "exotic",
                                  "not_in_fe"))
 }
-head(temp, 50)
+head(temp, 50) #need some more checking.
 #merge
 dat2 <- merge(dat, temp, all.x = TRUE)
 head(dat2)
 
 #Last clean a bit columns:
-dat3 <- dat2[,c(1,3,7,8,12,13,14,20,24:28,31,32)]
+dat3 <- dat2[,c(1,3,7,8,12,13,14,20,24:28,31,32)] #PROBABLY I AM MISSING SOME RELEVANT COLUMNS LIKE MICROHABITAT.
 head(dat3)
 
 #things can be improved:
@@ -343,23 +430,6 @@ Save data
 ```{r}
 write.csv(dat3, "data/used_data.csv")
 ```
-
-
-Explore a bit
-
-```{r}
-temp <- subset(dat3, Presence_lin == 1)
-head(temp)
-temp$Presence_us0 <- ifelse(temp$Presence_us > 0, 1, 0)
-
-temp$loss <- temp$Presence_lin - temp$Presence_us0
-temp$loss #almost all loss???
-sum(temp$loss) / length(temp$loss) #86% loss! SOmething is wrong...
-temp[,c(1,6,8,16,17)]
-```
-
-
-
 
 
 
