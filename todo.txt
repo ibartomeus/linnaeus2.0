@@ -1,13 +1,34 @@
-#Next steps:
+#Plan
 
-- taxize NACHO (and then Joe)
-- traits missing (Joe)
-- Exotic NACHO (and maybe selfing)
-- Emy rural/urban?
-- Results NACHO
-- make a draft (Amy)
+- Clean data: 
+Check names using taxize (Nacho) and manual checks (Joe) -> Done in data_prep.Rmd. Data stored in /data/used_data.csv 
+data_prep needs a final check, specially in the final cleaning/merging.
 
-Joe:
+- Add traits missing: 
+I think we still need to check if we are missing traits for some species and manually add those. 
+
+- Add traits: 
+Exotic species and selfing. It's almost done, but needs checking. There is code in data_prep to retrieve origin (flora_europaea {originr}) and code for retrieving selfing rates, BUT looks that there is little overlap with the selfing database.
+
+- Emy rural/urban analysis:
+Emy already did a good analysis for her masters. Files in Vu_stats.
+
+- Main Results:
+
+Nacho initiated a prelim_analysis.Rmd with mainly a template of planned analysis. 
+
+- Make a draft.
+
+I belive Amy started a document and to complie refs, but I can find it.
+
+
+
+
+
+
+
+#--------------------------------
+Questions for Joe, regarding name checks: ANSWERED IN joe_edits.R
 
 1) In linneaus.csv data check why those entries have no species:     
     Herbatio            Micro.habitat Genus species notes gen_sp
